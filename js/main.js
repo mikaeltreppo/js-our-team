@@ -29,7 +29,7 @@ function esport (lenghtArray){
     let name = members[i].name ;
     let position = members[i].position ;
     let profile = members[i].profile ;
-    membersDom.innerHTML += "<div><h2>" + name + "</h2><p>" + position + "</p><img src='" + profile + "' alt='" + name + "'></div>";;
+    membersDom.innerHTML += "<div class='m-2 text-center '><h2>" + name + "</h2><p>" + position + "</p><img src='" + profile + "' </div>";
 }}
 
 
