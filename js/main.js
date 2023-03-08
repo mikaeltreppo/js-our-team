@@ -1,3 +1,8 @@
+const membersDom = document.getElementById('members');
+
+
+
+
 const members = [
     {
         "name": "Wayne Barnett", "position": "Founder & CEO", "profile": "wayne-barnett-founder-ceo.jpg"
@@ -18,9 +23,21 @@ const members = [
         "name": "Barbara Ramos", "position": "Graphic Designer", "profile": "barbara-ramos-graphic-designer.jpg"
     }
 ]
+let name;
+let position;
+let profile;
+function esport (lenghtArray){
+    for(let i = 0; i<lenghtArray; i++){
+     name = members[i].name;
+     position = members[i].position;
+     profile = members[i].profile;
+}}
+
+esport(members.length)
 
 
-console.log(members);
+
+
 
 
 
