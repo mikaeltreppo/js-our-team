@@ -1,6 +1,6 @@
 const membersDom = document.getElementById('members');
 
-
+let printable = [];
 
 
 const members = [
@@ -23,17 +23,19 @@ const members = [
         "name": "Barbara Ramos", "position": "Graphic Designer", "profile": "barbara-ramos-graphic-designer.jpg"
     }
 ]
-let name;
 let position;
 let profile;
 function esport (lenghtArray){
     for(let i = 0; i<lenghtArray; i++){
-     name = members[i].name;
-     position = members[i].position;
-     profile = members[i].profile;
+    let name = members[i].name;
+    let position = members[i].position;
+    let profile = members[i].profile;
+    printable.push(name);   printable.push(position);    printable.push(profile);
 }}
 
 esport(members.length)
+
+membersDom.innerHTML= printable;
 
 
 
